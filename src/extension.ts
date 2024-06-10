@@ -1,25 +1,75 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
-import * as vscode from 'vscode';
+import { exec } from 'child_process'
+import * as vscode from 'vscode'
 
-// This method is called when your extension is activated
-// Your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
+  console.log('Congratulations, your extension "vue-mess-detector" is now active!')
 
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "vue-mess-detector" is now active!');
+  const outputChannel = vscode.window.createOutputChannel('Vue Mess Detector')
 
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with registerCommand
-	// The commandId parameter must match the command field in package.json
-	const disposable = vscode.commands.registerCommand('vue-mess-detector.helloWorld', () => {
-		// The code you place here will be executed every time your command is executed
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from vue-mess-detector!');
-	});
+  const disposable = vscode.commands.registerCommand('vue-mess-detector.analyze', async () => {
+    const options = [
+      { label: 'No additional arguments', description: 'Run npx vue-mess-detector analyze' },
+      {
+        label: 'laksmi3',
+        description: 'Run npx vue-mess-detector analyze laksmi3',
+        param: '/home/rrd/public_html/laksmi3/src',
+      },
+    ]
 
-	context.subscriptions.push(disposable);
+    const selectedOption = await vscode.window.showQuickPick(options, {
+      placeHolder: 'Select an option for the analyze command',
+    })
+
+    if (!selectedOption) {
+      return // User canceled the selection
+    }
+
+    const command = `npx vue-mess-detector analyze ${selectedOption.param}`
+    outputChannel.show() // Show the output channel
+    outputChannel.appendLine(`Running: ${command}`)
+
+    const panel = vscode.window.createWebviewPanel(
+      'vueMessDetectorOutput', // Unique ID for the panel
+      'Vue Mess Detector Output', // Panel title
+      vscode.ViewColumn.Beside // Optional: Placement relative to editor
+    )
+
+    const docStart = `<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Mess Detector Output</title>
+  </head>
+  <body>
+  <h1>Vue Mess Detector Output</h1>`
+
+    const docEnd = `</body>
+  </html>`
+
+    panel.webview.html = `${docStart} analyzing... ${docEnd}`
+    panel.reveal()
+
+    exec(command, (error, stdout, stderr) => {
+      if (error) {
+        outputChannel.appendLine(`Error: ${error.message}`)
+        return
+      }
+      if (stderr) {
+        outputChannel.appendLine(`Error: ${stderr}`)
+        return
+      }
+
+      let result = stdout.replace(/\x1b\[41m/g, '<span style="background-color: red">')
+      result = result.replace(/\x1b\[0m/g, '</span>')
+      result = result.replace(/\n/g, '<br>')
+
+      panel.webview.html = `${docStart} ${result} ${docEnd}`
+      outputChannel.appendLine(`Analysis complete`)
+    })
+  })
+
+  context.subscriptions.push(disposable)
 }
 
 // This method is called when your extension is deactivated
