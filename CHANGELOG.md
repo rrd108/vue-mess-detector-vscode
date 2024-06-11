@@ -6,4 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+- Add suport for filtering rules to use
+
+## 0.1.0
+
+### Added
+
 - Initial release
