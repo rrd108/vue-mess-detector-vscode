@@ -8,7 +8,7 @@ Vue Mess Detector search your `src` folder's `.vue` files and detects code smell
 
 You can read about the aplied rules here: [https://github.com/rrd108/vue-mess-detector/blob/main/README.md#rules](https://github.com/rrd108/vue-mess-detector/blob/main/README.md#rules)
 
-![Output Image](output.png)
+![Output Image](https://github.com/rrd108/vue-mess-detector-vscode/blob/main/images/output.png)
 
 ## Release Notes
 
