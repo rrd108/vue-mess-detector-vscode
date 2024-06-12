@@ -2,7 +2,7 @@
   "name": "vue-mess-detector",
   "displayName": "vue-mess-detector",
   "description": "A static code analysis tool for detecting code smells and best practice violations in Vue.js and Nuxt.js projects.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "WebMania",
   "repository": {
     "type": "git",
