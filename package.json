@@ -45,6 +45,6 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
-    "vue-mess-detector": "~0.16.0"
+    "vue-mess-detector": "^0.16.0"
   }
 }
