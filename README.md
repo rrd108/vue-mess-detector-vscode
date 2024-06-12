@@ -16,6 +16,10 @@ You can read about the aplied rules here: [https://github.com/rrd108/vue-mess-de
 
 ## Release Notes
 
+### 0.1.3
+
+- vue-mess-detecor dependency version range changed
+
 ### 0.1.1
 
 - Fix image url in README.md

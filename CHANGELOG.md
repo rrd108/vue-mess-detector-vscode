@@ -8,6 +8,18 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - Add suport for filtering rules to use
 
+## 0.1.3
+
+### Added
+
+- vue-mess-detecor dependency version range changed
+
+## 0.1.1
+
+### Added
+
+- Fix image url in README.md
+
 ## 0.1.0
 
 ### Added
