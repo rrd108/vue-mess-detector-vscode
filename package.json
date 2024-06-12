@@ -11,6 +11,13 @@
   "engines": {
     "vscode": "^1.90.0"
   },
+  "keywords": [
+    "vue",
+    "nuxt",
+    "code-smells",
+    "best-practices",
+    "code-analysis"
+  ],
   "categories": [
     "Other"
   ],
