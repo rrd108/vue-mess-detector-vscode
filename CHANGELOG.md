@@ -8,6 +8,12 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - Add suport for filtering rules to use
 
+## 0.2.0
+
+### Added
+
+- Add support for selecting any folders to analyze
+
 ## 0.1.3
 
 ### Added

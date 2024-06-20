@@ -13,17 +13,3 @@ Vue Mess Detector search your project folder's `.vue` files and detects code sme
 You can read about the aplied rules here: [https://github.com/rrd108/vue-mess-detector/blob/main/README.md#rules](https://github.com/rrd108/vue-mess-detector/blob/main/README.md#rules)
 
 ![Output Image](https://raw.githubusercontent.com/rrd108/vue-mess-detector-vscode/main/images/output.png)
-
-## Release Notes
-
-### 0.1.3
-
-- vue-mess-detecor dependency version range changed
-
-### 0.1.1
-
-- Fix image url in README.md
-
-### 0.1.0
-
-- Initial release.
