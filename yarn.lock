@@ -237,10 +237,10 @@
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
 
-"@vscode/test-cli@^0.0.9":
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/@vscode/test-cli/-/test-cli-0.0.9.tgz#7c8deca15d81ecf6df484ac2e420a85abc526ee6"
-  integrity sha512-vsl5/ueE3Jf0f6XzB0ECHHMsd5A0Yu6StElb8a+XsubZW7kHNAOw4Y3TSSuDzKEpLnJ92nbMy1Zl+KLGCE6NaA==
+"@vscode/test-cli@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@vscode/test-cli/-/test-cli-0.0.10.tgz#35f0e81c2e0ff8daceb223e99d1b65306c15822c"
+  integrity sha512-B0mMH4ia+MOOtwNiLi79XhA+MLmUItIC8FckEuKrVAVriIuSWjt7vv4+bF8qVFiNFe4QRfzPaIZk39FZGWEwHA==
   dependencies:
     "@types/mocha" "^10.0.2"
     c8 "^9.1.0"
@@ -959,6 +959,11 @@ html-escaper@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/html-escaper/-/html-escaper-2.0.2.tgz#dfd60027da36a36dfcbe236262c00a5822681453"
   integrity sha512-H2iMtd0I4Mt5eYiapRdIDjp+XzelXQ0tFE4JS7YFwFevXXMmOp9myNrUvCg0D6ws8iqkRPBfKHgbwig1SmlLfg==
+
+html-tags@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/html-tags/-/html-tags-4.0.0.tgz#5c170da17c776157b2c02b8f392d66589aa67fb5"
+  integrity sha512-KM1SNmemQtsD+OTInZTYKZNbyPzzVrjMR2Iz1Np+Y+bcxUh0dgKF4NtylJVkGZRLe3NklHizJ5k1Vd3ug1uTPA==
 
 http-proxy-agent@^7.0.2:
   version "7.0.2"
@@ -1824,12 +1829,13 @@ v8-to-istanbul@^9.0.0:
     "@types/istanbul-lib-coverage" "^2.0.1"
     convert-source-map "^2.0.0"
 
-vue-mess-detector@^0.17.0:
-  version "0.17.0"
-  resolved "https://registry.yarnpkg.com/vue-mess-detector/-/vue-mess-detector-0.17.0.tgz#7b4d21776a4d303380b4090dd14fb531bbd16bd1"
-  integrity sha512-9MhJW+bdRoa9JEteMJ7iF/46jRLJS/RPGG3Lq/pOgw3riPUO34YroxUEgGZZ5WrZJn3SRFmoLEFofGjMBIg1NQ==
+vue-mess-detector@^0.37.0:
+  version "0.37.0"
+  resolved "https://registry.yarnpkg.com/vue-mess-detector/-/vue-mess-detector-0.37.0.tgz#e677021e8b5a68145e0a5fc716752a3558a1e16d"
+  integrity sha512-85a+g/mEna0asiYQLvZNDfVhnpE5KF9aWIbZmQRzr3R8myoO9a36mggLYdEbEYST4n1jy51FQputTKEmeecdnw==
   dependencies:
     "@vue/compiler-sfc" "^3.4.27"
+    html-tags "^4.0.0"
     magic-regexp "^0.8.0"
     yargs "^17.7.2"
 
