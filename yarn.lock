@@ -135,14 +135,14 @@
   integrity sha512-2QF/t/auWm0lsy8XtKVPG19v3sSOQlJe/YHZgfjb/KBBHOGSV+J2q/S671rcq9uTBrLAXmZpqJiaQbMT+zNU1w==
 
 "@types/mocha@^10.0.2", "@types/mocha@^10.0.6":
-  version "10.0.6"
-  resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-10.0.6.tgz#818551d39113081048bdddbef96701b4e8bb9d1b"
-  integrity sha512-dJvrYWxP/UcXm36Qn36fxhUKu8A/xMRXVT2cliFF1Z7UA9liG5Psj3ezNSZw+5puH2czDXRLcXQxf8JbJt0ejg==
+  version "10.0.7"
+  resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-10.0.7.tgz#4c620090f28ca7f905a94b706f74dc5b57b44f2f"
+  integrity sha512-GN8yJ1mNTcFcah/wKEFIJckJx9iJLoMSzWcfRRuxz/Jk+U6KQNnml+etbtxFK8lPjzOw3zp4Ha/kjSst9fsHYw==
 
 "@types/node@18.x":
-  version "18.19.37"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.19.37.tgz#506ee89d6b5edd5a4c4e01b22162dd8309718a35"
-  integrity sha512-Pi53fdVMk7Ig5IfAMltQQMgtY7xLzHaEous8IQasYsdQbYK3v90FkxI3XYQCe/Qme58pqp14lXJIsFmGP8VoZQ==
+  version "18.19.50"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.19.50.tgz#8652b34ee7c0e7e2004b3f08192281808d41bf5a"
+  integrity sha512-xonK+NRrMBRtkL1hVCc3G+uXtjh1Al4opBLjqVmipe5ZAaBYWW6cNAiBVZ1BvmkBhep698rP3UM3aRAdSALuhg==
   dependencies:
     undici-types "~5.26.4"
 
@@ -959,6 +959,11 @@ html-escaper@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/html-escaper/-/html-escaper-2.0.2.tgz#dfd60027da36a36dfcbe236262c00a5822681453"
   integrity sha512-H2iMtd0I4Mt5eYiapRdIDjp+XzelXQ0tFE4JS7YFwFevXXMmOp9myNrUvCg0D6ws8iqkRPBfKHgbwig1SmlLfg==
+
+html-tags@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/html-tags/-/html-tags-4.0.0.tgz#5c170da17c776157b2c02b8f392d66589aa67fb5"
+  integrity sha512-KM1SNmemQtsD+OTInZTYKZNbyPzzVrjMR2Iz1Np+Y+bcxUh0dgKF4NtylJVkGZRLe3NklHizJ5k1Vd3ug1uTPA==
 
 http-proxy-agent@^7.0.2:
   version "7.0.2"
@@ -1824,12 +1829,13 @@ v8-to-istanbul@^9.0.0:
     "@types/istanbul-lib-coverage" "^2.0.1"
     convert-source-map "^2.0.0"
 
-vue-mess-detector@^0.17.0:
-  version "0.17.0"
-  resolved "https://registry.yarnpkg.com/vue-mess-detector/-/vue-mess-detector-0.17.0.tgz#7b4d21776a4d303380b4090dd14fb531bbd16bd1"
-  integrity sha512-9MhJW+bdRoa9JEteMJ7iF/46jRLJS/RPGG3Lq/pOgw3riPUO34YroxUEgGZZ5WrZJn3SRFmoLEFofGjMBIg1NQ==
+vue-mess-detector@^0.37.0:
+  version "0.37.0"
+  resolved "https://registry.yarnpkg.com/vue-mess-detector/-/vue-mess-detector-0.37.0.tgz#e677021e8b5a68145e0a5fc716752a3558a1e16d"
+  integrity sha512-85a+g/mEna0asiYQLvZNDfVhnpE5KF9aWIbZmQRzr3R8myoO9a36mggLYdEbEYST4n1jy51FQputTKEmeecdnw==
   dependencies:
     "@vue/compiler-sfc" "^3.4.27"
+    html-tags "^4.0.0"
     magic-regexp "^0.8.0"
     yargs "^17.7.2"
 
