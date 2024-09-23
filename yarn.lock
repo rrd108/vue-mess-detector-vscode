@@ -208,9 +208,9 @@
   integrity sha512-HfMcUmy9hTMJh66VNcmeC9iVErIZJli2bszuXc6julh5YGuRb/W5OnkHjwLNYdFlMis0sY3If5SEAp+PktdJjw==
 
 "@types/node@20.x":
-  version "20.16.5"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.16.5.tgz#d43c7f973b32ffdf9aa7bd4f80e1072310fd7a53"
-  integrity sha512-VwYCweNo3ERajwy0IUlqqcyZ8/A7Zwa9ZP3MnENWcB11AejO+tLy3pu850goUW2FC/IJMdZUfKpX/yxL1gymCA==
+  version "20.16.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.16.6.tgz#0bf99fcebcee68ecdc2c45b160a10a0fe5c652b8"
+  integrity sha512-T7PpxM/6yeDE+AdlVysT62BX6/bECZOmQAgiFg5NoBd5MQheZ3tzal7f1wvzfiEcmrcJNRi2zRr2nY2zF+0uqw==
   dependencies:
     undici-types "~6.19.2"
 
@@ -1544,6 +1544,13 @@ minimatch@9.0.3:
   dependencies:
     brace-expansion "^2.0.1"
 
+minimatch@^10.0.1:
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-10.0.1.tgz#ce0521856b453c86e25f2c4c0d03e6ff7ddc440b"
+  integrity sha512-ethXTt3SGGR+95gudmqJ1eNhRO7eGEGIgYA9vnPatK4/etz2MEVDno5GMCibdMTuBMyElzIlgxMna3K94XDIDQ==
+  dependencies:
+    brace-expansion "^2.0.1"
+
 minimatch@^3.0.4, minimatch@^3.0.5, minimatch@^3.1.1, minimatch@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.1.2.tgz#19cd194bfd3e428f049a70817c038d89ab4be35b"
@@ -2196,15 +2203,16 @@ vue-eslint-parser@^9.1.0:
     lodash "^4.17.21"
     semver "^7.3.6"
 
-vue-mess-detector@^0.53.0:
-  version "0.53.0"
-  resolved "https://registry.yarnpkg.com/vue-mess-detector/-/vue-mess-detector-0.53.0.tgz#b7de71df841f355ef37988a0d354f8b457545465"
-  integrity sha512-aibn9zBa1hSjNjYb6AX/y59fqkv91V3leLF+S78CNL9YSqH2uc4h1psfOUFyiIs7ikkBjky4YHChz6X3Vbl2sw==
+vue-mess-detector@latest:
+  version "0.54.1"
+  resolved "https://registry.yarnpkg.com/vue-mess-detector/-/vue-mess-detector-0.54.1.tgz#bdf1da323c4be28ac4e274a1f076813593eee984"
+  integrity sha512-i1fqNuQSmLT18T2ChfNqDXkXq4vakfWwyMJ4ejvZ33I6XHfzC75S1/QG7LCq6SuD9KLxh7W7jVYmbPSZFHqafw==
   dependencies:
     "@vue/compiler-sfc" "^3.4.27"
     cli-table3 "^0.6.5"
     html-tags "^4.0.0"
     magic-regexp "^0.8.0"
+    minimatch "^10.0.1"
     prettier-eslint "^16.3.0"
     yargs "^17.7.2"
 
